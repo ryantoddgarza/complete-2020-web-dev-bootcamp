@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  background-color: #f2eee5;
+}
+
+h2,
+h3 {
+  font-family: 'Montserrat';
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  color: #66bfbf;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #11999e;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+hr {
+  width: 75px;
+  margin: 90px auto;
+  border-style: dotted none none;
+  border-width: 8px;
+  border-color: #9f9f9f;
+}
+
+.top-container {
+  position: relative;
+  padding: 100px 0;
+}
+
+.middle-container {
+  position: relative;
+  padding: 100px 0 0;
+}
+
+.bottom-container {
+  position: relative;
+  padding: 60px 0 20px;
+  margin: 48px 0 0;
+  background-color: #66bfbf;
+}
+
+.hero-title {
+  color: #66bfbf;
+}
+
+.hero-title h1 {
+  margin: 50px auto 0;
+  font-family: 'Dawning of a New Day';
+  font-size: 5.625rem;
+}
+
+.hero-title p {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.footer-link {
+  padding: 20px;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0 0;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 15%;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 15%;
+  bottom: 300px;
+}
+
+.profile-avatar {
+  max-width: 240px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: justify;
+}
+
+.skill-row img {
+  max-width: 50px;
+  margin-bottom: 30px;
+}
+
+.skill-row:nth-of-type(odd) img {
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-row:nth-of-type(even) img {
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row h3 {
+  line-height: 50px;
+}
+
+.skill-row:nth-of-type(odd) h3 {
+  text-align: left;
+}
+
+.skill-row:nth-of-type(even) h3 {
+  text-align: right;
+}
+
+.skill-description {
+  clear: both;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  -moz-box-shadow: inset 0px 1px 0px 0px #11999e;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #11999e;
+  box-shadow: inset 0px 1px 0px 0px #11999e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #66bfbf),
+    color-stop(1, #11999e)
+  );
+  background: -moz-linear-gradient(center top, #66bfbf 5%, #11999e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66BFBF', endColorstr='#11999E');
+  background-color: #66bfbf;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  text-indent: 0;
+  border: 1px solid #11999e;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 60px;
+  line-height: 60px;
+  width: 131px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #11999e;
+}
+
+.btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #11999e),
+    color-stop(1, #66bfbf)
+  );
+  background: -moz-linear-gradient(center top, #11999e 5%, #66bfbf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11999E', endColorstr='#66BFBF');
+  background-color: #11999e;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
