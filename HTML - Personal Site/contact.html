@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Personal Site</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container flex--center">
+      <h1>Contact</h1>
+      <div class="contact__address">
+        <p>123 Fictional Ave<br />Somewhere, Earth 98765</p>
+        <p>555-123-4567</p>
+        <p>myname@email.com</p>
+      </div>
+      <form action="mailto:myname@email.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" name="name" required placeholder="First Last" />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="username@email.com"
+        />
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          rows="8"
+          cols="60"
+          required
+          placeholder="Your message..."
+        ></textarea>
+        <div>
+          <input type="checkbox" name="subscribe" />
+          <label class="small-text" for="subscribe">Subscribe to emails</label>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
