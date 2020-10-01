@@ -1,0 +1,9 @@
+a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.big-title {
+  font-size: 10rem;
+  color: red;
+}
