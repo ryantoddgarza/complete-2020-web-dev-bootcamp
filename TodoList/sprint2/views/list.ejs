@@ -8,16 +8,24 @@
 <body>
   <main>
     <div class="box heading">
-      <h1><%= listTitle %></h1>
+      <h1><%= listTitle.trim().replace(/^\w/, (c) => c.toUpperCase()) %></h1>
     </div>
     <div class="box">
       <% items.forEach(function (item) { %>
-        <div class="item">
-          <input type="checkbox">
-          <p><%= item %></p>
-        </div>
+        <form action="/delete" method="post">
+          <div class="item">
+            <input
+              type="checkbox"
+              name="checkbox"
+              value="<%=item._id%>"
+              onChange="this.form.submit()"
+            >
+            <p><%= item.name %></p>
+            <input type="hidden" name="listName" value="<%=listTitle%>">
+          </div>
+        </form>
       <% }) %>
-      <form action="/" method="post">
+      <form class="add-item" action="/" method="post">
         <input
           type="text"
           name="newItem"
@@ -27,7 +35,7 @@
         <button
           type="submit"
           name="list"
-          value=<%= listTitle%>
+          value=<%=listTitle%>
         >
           +
         </button>
