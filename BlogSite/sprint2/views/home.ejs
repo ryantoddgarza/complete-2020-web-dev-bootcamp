@@ -1,0 +1,14 @@
+<%- include('partials/header') -%>
+  <h1>Home</h1>
+  <p> <%= homeContent %> </p>
+  <% posts.forEach(({ _id, title, content }) => { %>
+      <h2><%=title%></h2>
+      <p>
+        <%=content.slice(0, 100)%>
+        <span>...</span>
+      </p>
+      <div>
+        <a href="/posts/<%=_id%>">Read More</a>
+      </div>
+  <% }) %>
+<%- include('partials/footer') -%>
